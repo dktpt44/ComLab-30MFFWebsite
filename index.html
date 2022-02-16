@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>30MFF Website</title>
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="overlayDiv" class="overlayClass">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlayContent">
+      <video width="80%" height="100%" controls>
+        <source src="video/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <header class="main-content headDiv">
+
+    <img class="logoImgg" src="images/logo.png" width="148" height="42">
+    <span>
+      <button class="watchnow" onclick="openNav()">WATCH NOW $4.99</button>
+    </span>
+  </header>
+
+  <div class="div-body main-content">
+    <div class="navItemsDiv">
+      <ul class="navUl">
+        <li id="home" class="activeLi">HOME</li>
+        <li id="about">ABOUT</li>
+        <li id="gallery">GALLERY</li>
+      </ul>
+    </div>
+    <div class="midDiv">
+
+      <div class="homeDiv">
+        <h3>NYUAD Student Life</h3>
+        <div class="posterDiv">
+          <img class="posterImg" src="./images/poster.png" />
+        </div>
+        <p class="premier" onclick="openNav()">Premier now for $4.99 <img class="playbtn" src="./images/play.jpg" />
+        </p>
+        <p class="timer"><img class="playbtn" src="./images/timer.png" />00:01:12</p>
+      </div>
+
+      <div class="aboutDiv">
+        <h3 class="abouth3">Synopsis</h3>
+        <p class="aboutDivP">The movie is about a typical NYUAD computer Science major student. It depicts what a
+          typical school day for a
+          computer science major looks like. Computer science major is one of the difficult majors at NYUAD and also
+          more challenging and involves problem solving. Students are often found working in groups solving problems and
+          working on algorithms. The movie portrays how a typical CS student explores the resources at NYUAD while also
+          catching the beauty of studying at NYUAD. If you are a CS major in any university and want inspiration, then
+          it is the movie that you definitely do not want to miss out on.</p>
+        <hr>
+        <h3 class="abouth3">Cast</h3>
+        <div class="allCast">
+          <div class="oneCastItem">
+            <img class="castImg" src="images/ww.PNG" height="110" width="110">
+            <p class="castName">Willy Wanka</p>
+            <p class="castRole">Actor</p>
+          </div>
+
+          <div class="oneCastItem">
+            <img class="castImg" src="images/d.jpg" height="110" width="110">
+            <p class="castName">Dhurba Tripathi</p>
+            <p class="castRole">Director</p>
+          </div>
+
+          <div class="oneCastItem">
+            <img class="castImg" src="images/r.jpg" height="110" width="110">
+            <p class="castName">Ronit Singh</p>
+            <p class="castRole">Director</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="galleryDiv">
+        <!-- carousel div -->
+        <div class="carousel-container">
+          <div class="carousel-image-wrapper">
+            <img src="images/first.jpg" alt="image1">
+            <img src="images/second.jpg" alt="image1">
+            <img src="images/third.jpg" alt="image1">
+            <img src="images/fourth.jpg" alt="image1">
+            <img src="images/fifth.jpg" alt="image1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sideDiv">
+      <h4 class="sideDivh5">Available for stream:</h4>
+      <div class="vidlinks">
+        <div class="vidLinkItm">
+          <img class="vidLinkLogo" src="./images/netflix.png">
+          <p class="vidtxt">Netflix</p>
+        </div>
+        <div class="vidLinkItm">
+          <img class="vidLinkLogo" src="./images/amazon.png">
+          <p class="vidtxt">Amazon</p>
+        </div>
+
+      </div>
+      <h4 class="sideDivh5 watchTrailer">Watch trailer here: </h4>
+      <div class="vidlinks">
+        <div class="vidLinkItm ytlnk">
+          <img class="vidLinkLogo" src="images/youtube.png">
+          <p class="vidtxt">Youtube</p>
+        </div>
+        <div class="vidLinkItm ytlnk">
+          <img class="vidLinkLogo" src="images/vimeo.png">
+          <p class="vidtxt">Vimeo</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="foot">
+    <div class="copyrightDiv">
+      <p class="copyrighttext">Copyright &copy; 2022 MediaWorks, All Rights Reserved</p>
+    </div>
+    <ul class="footerLinks">
+      <li><a href="#" class="fa fa-facebook"></a></li>
+      <li><a href="#" class="fa fa-instagram"></a></li>
+      <li><a href="#" class="fa fa-twitter"></a></li>
+    </ul>
+  </footer>
+  <br>
+  <br>
+</body>
+
+</html>
