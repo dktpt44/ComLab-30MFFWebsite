@@ -34,6 +34,9 @@ ul {
 button {
   cursor: pointer;
 }
+
+/* show the content in 80% of device width */
+
 .main-content {
   width: 80%;
   max-width: 1220px;
@@ -42,6 +45,9 @@ button {
 .logoImgg {
   border-radius: 4px;
 }
+
+/* navigation bar  */
+
 .headDiv {
   display: flex;
   justify-content: space-between;
@@ -62,6 +68,26 @@ button {
 .watchnow:hover {
   background-color: rgb(230, 1, 1);
   box-shadow: 0 5px 15px rgba(204, 39, 39, 0.4);
+}
+/* for the whole body below navigation bar  */
+.div-body {
+  display: flex;
+  justify-content: space-between;
+}
+.midDiv {
+  width: 60%;
+  min-width: 400px;
+}
+/* side navigation items align them vertically  */
+
+.sideDiv {
+  width: 20%;
+  min-width: 120px;
+  max-width: 187px;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .navItemsDiv {
   width: 14%;
@@ -97,23 +123,7 @@ button {
 .activeLi {
   color: rgb(202, 1, 1) !important;
 }
-.div-body {
-  display: flex;
-  justify-content: space-between;
-}
-.midDiv {
-  width: 60%;
-  min-width: 400px;
-}
-.sideDiv {
-  width: 20%;
-  min-width: 120px;
-  max-width: 187px;
-  height: 630px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+/* for home tab  */
 .homeDiv {
   display: block;
 }
@@ -143,6 +153,7 @@ button {
   margin-left: 4px;
   margin-right: 4px;
 }
+/* for about tab  */
 .aboutDiv {
   display: none;
   margin-top: 28px;
@@ -161,6 +172,7 @@ button {
   letter-spacing: 2px;
   margin-top: 26px;
 }
+/* for the list of cast, show them horizontally  */
 .allCast {
   display: flex;
   justify-content: space-evenly;
@@ -182,6 +194,7 @@ button {
   color: rgb(100, 100, 100);
   text-align: center;
 }
+/* for the gallery navigation item  */
 .galleryDiv {
   display: none;
 }
@@ -202,6 +215,83 @@ button {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 7px 0px;
 }
+
+.galleryContainer {
+  margin-top: 26px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Css for carousel */
+.carousel-container {
+  width: 600px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 3px 0px;
+  border-radius: 4px;
+}
+/* carousel image wrapper is inside carousel div  */
+.carousel-image-wrapper {
+  position: absolute;
+  top: 0px;
+}
+.carousel-image-wrapper img {
+  object-fit: cover;
+  float: left;
+}
+
+.left-button button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  left: 5px;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+button img {
+  border-radius: 50%;
+}
+.right-button button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.img-indicators {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+}
+.circle {
+  border-radius: 50%;
+  background-color: #a5a5a5;
+  height: 16px;
+  width: 16px;
+  border: none;
+  margin-right: 10px;
+}
+.circle:hover {
+  background-color: rgb(189, 189, 189);
+}
+.bigger-circle {
+  background-color: rgb(255, 225, 225);
+  height: 20px;
+  width: 20px;
+}
+
+/* for items on the right side of the page */
 .sideDivh5 {
   color: rgb(95, 95, 95);
   letter-spacing: 1.5px;
@@ -245,6 +335,7 @@ button {
 .watchTrailer {
   margin-top: 56px;
 }
+/* for footer items  */
 .copyrightDiv {
   display: flex;
   justify-content: center;
@@ -263,7 +354,7 @@ button {
   margin-top: 24px;
   padding-bottom: 12px;
 }
-
+/* for watch now video  */
 .overlayClass {
   height: 0%;
   width: 100%;
@@ -295,7 +386,7 @@ button {
   right: 45px;
   font-size: 54px;
 }
-
+/* for footer links  */
 .fa {
   padding: 6px 3px 3px;
   font-size: 20px !important;
