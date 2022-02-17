@@ -124,11 +124,11 @@
     <div class="sideDiv">
       <h4 class="sideDivh5">Available for stream:</h4>
       <div class="vidlinks">
-        <div class="vidLinkItm">
+        <div class="vidLinkItm" onclick="showModal()">
           <img class="vidLinkLogo" src="./images/netflix.png">
           <p class="vidtxt">Netflix</p>
         </div>
-        <div class="vidLinkItm">
+        <div class="vidLinkItm" onclick="showModal()">
           <img class="vidLinkLogo" src="./images/amazon.png">
           <p class="vidtxt">Amazon</p>
         </div>
@@ -160,8 +160,23 @@
       <li><a href="#" class="fa fa-twitter"></a></li>
     </ul>
   </footer>
-  <br>
-  <br>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Coming Soon</h2>
+      </div>
+      <div class="modal-body">
+        <p>Movie is releasing soon on this platform.</p>
+        <p>Thank you for being patient.</p>
+
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
